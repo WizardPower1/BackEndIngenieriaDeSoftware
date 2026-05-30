@@ -14,7 +14,7 @@ public class DenunciaController {
 	@Autowired
 	private ServicioModeracion servicio; //Usamos el servicio asociado a este controlador en el caso de uso.
 
-	@PostMapping
+	@PostMapping("/denuncias")
 	public Denuncia denunciar(
 			@RequestBody DenunciaDeContenidoDTO dto) {
 

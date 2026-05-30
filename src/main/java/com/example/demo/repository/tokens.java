@@ -4,7 +4,7 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.example.demo.entity.Token;
-import com.example.demo.entity.Usuario;
+// import com.example.demo.entity.Usuario;
 
 public interface tokens extends JpaRepository<Token, Long> { //Repositorio de tokens creados.
 	Optional<Token> findByToken(String token);
