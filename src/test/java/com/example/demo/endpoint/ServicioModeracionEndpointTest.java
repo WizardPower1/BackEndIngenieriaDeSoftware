@@ -17,9 +17,9 @@ public class ServicioModeracionEndpointTest {
     @DisplayName("Prueba endpoint POST /denuncias")
     public void testPostDenuncias() {
         given()
-            .queryParam("idPost", notNullValue())
-            .queryParam("motivo", notNullValue())
-            .queryParam("idUsuarioDenunciante", notNullValue())
+            .queryParam("idPost", 100)
+            .queryParam("motivo", "contenido explícito")
+            .queryParam("idUsuarioDenunciante", 200)
         .when()
             .post("/denuncias")
         .then()

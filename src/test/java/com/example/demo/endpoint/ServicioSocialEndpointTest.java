@@ -16,8 +16,8 @@ public class ServicioSocialEndpointTest {
     @DisplayName("Prueba endpoint POST /solicitudAmistad/solicitar")
     public void testPostSolicitarAmistad() {
         given()
-            .queryParam("idEmisor", notNullValue())
-            .queryParam("idReceptor", notNullValue())
+            .queryParam("idEmisor", 100)
+            .queryParam("idReceptor", 200)
         .when()
             .post("/solicitudAmistad/solicitar")
         .then()
